@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:id="@+id/person_item_image"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/person_info_detail"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="全部订单"
+            android:textSize="17sp"
+            android:id="@+id/person_item_textbig"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/person_item_image"
+            android:layout_toEndOf="@+id/person_item_image" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:id="@+id/person_item_back"
+            android:src="@drawable/perinfoarrow"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看全部订单记录"
+            android:layout_marginRight="10dp"
+            android:id="@+id/person_item_textsmall"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/person_item_back"
+            android:layout_toStartOf="@+id/person_item_back" />
+    </RelativeLayout>
+
+</LinearLayout>

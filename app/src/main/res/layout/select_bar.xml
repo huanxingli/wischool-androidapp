@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal"
+    >
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/activity_background"
+        android:id="@+id/id_main_rdaiogroup">
+        <RadioButton
+            android:id="@+id/radio_tasklist"
+            android:text="排列"
+            style="@style/task_tab_bar"/>
+        <RadioButton
+            android:id="@+id/radio_classify"
+            android:text="分类"
+            style="@style/task_tab_bar" />
+
+        <RadioButton
+            android:id="@+id/radio_select"
+            android:text="筛选"
+            style="@style/task_tab_bar" />
+    </RadioGroup>
+</LinearLayout>

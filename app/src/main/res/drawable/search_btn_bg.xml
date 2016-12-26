@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+  <!--按下的时候-->
+  <item android:state_focused="false" android:state_pressed="true" android:drawable="@drawable/loginpress_btn" />
+
+
+  <!--默认情况下-->
+  <item android:drawable="@drawable/search_btn" />
+</selector>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="activity_background">#0B6ED4</color>
+    <color name="alltasks_blue">#086cea</color>
+    <color name="singletask_yellow">#ffcd34</color>
+    <color name="multitasks_red">#eb0738</color>
+    <color name="register_background">#faa428</color>
+    <color name="line">#EFEFEF</color>
+    <color name="red">#ff5f5f</color>
+    <color name="gray">#BFBFBF</color>
+    <color name="btn_gray">#7d7d7d</color>
+    <color name="btn_press">#686868</color>
+    <color name="black">#000000</color>
+</resources>

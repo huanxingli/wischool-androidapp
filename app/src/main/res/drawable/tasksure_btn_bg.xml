@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+  <!-- 接受任务按钮的默认和按下时候的变化 -->
+  <!--按下的时候-->
+  <item android:state_focused="false" android:state_pressed="true" android:drawable="@drawable/loginpress_btn" />
+
+  <item android:state_focused="true" android:state_pressed="false" android:drawable="@drawable/loginpress_btn" />
+
+  <!--失去焦点的时候-->
+  <item android:state_focused="false"  android:drawable="@drawable/shape_btn_list_task" />
+
+  <!--默认情况下-->
+  <item android:drawable="@drawable/shape_btn_list_task" />
+</selector>

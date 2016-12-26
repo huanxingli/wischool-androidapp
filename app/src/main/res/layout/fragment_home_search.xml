@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/activity_background"
+        android:id="@+id/homeSearch">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:hint="输入任务名称或关键词"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:selectAllOnFocus="true"
+            android:textSize="13sp"
+            android:id="@+id/search_edt"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/home_info_image"
+            android:layout_toStartOf="@+id/home_info_image" />
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/home_info_image"
+            android:src="@drawable/home_message"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/imageView2"
+            android:layout_toStartOf="@+id/imageView2"
+            android:layout_marginEnd="29dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="消息"
+            android:textSize="10sp"
+            android:textColor="@color/white"
+            android:layout_below="@+id/home_info_image"
+            android:layout_alignLeft="@+id/home_info_image"
+            android:layout_alignStart="@+id/home_info_image" />
+
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/home_plus"
+            android:layout_marginRight="18dp"
+            android:id="@+id/imageView2"
+            android:layout_alignTop="@+id/home_info_image"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="29dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发布"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:layout_below="@+id/imageView2"
+            android:layout_alignLeft="@+id/imageView2"
+            android:layout_alignStart="@+id/imageView2" />
+
+    </RelativeLayout>

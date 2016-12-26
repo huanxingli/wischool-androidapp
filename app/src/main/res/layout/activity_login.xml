@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/activity_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="false">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="登录"
+        android:id="@+id/loginTextView"
+        android:textSize="40sp"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80dp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/input_logo3"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_cor"
+        android:layout_marginTop="-3dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:orientation="vertical"
+        android:weightSum="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+            <View
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:id="@+id/view_accountid"
+                android:background="@color/red"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="用户名"
+                    android:id="@+id/textView_accountid"
+                    android:textSize="20sp"
+                    android:textColor="@color/red"
+                    android:layout_marginLeft="35dp"/>
+                <EditText
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="40dp"
+                    android:id="@+id/et_account_id"
+                    android:hint="用户名或手机号"
+                    android:text="lihuanxing"
+                    android:selectAllOnFocus="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/login_edt_red"
+                    android:layout_weight="0.08" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+            <View
+                android:layout_width="5dp"
+                android:id="@+id/view_password"
+                android:layout_height="match_parent"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView_password"
+                    android:text="密码"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="35dp"/>
+                <EditText
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="40dp"
+                    android:id="@+id/et_account_psw"
+                    android:inputType="textPassword"
+                    android:text="123456"
+                    android:selectAllOnFocus="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/login_edt_gray"
+                    android:layout_weight="0.08" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="忘记密码?"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="40dp"
+            android:layout_gravity="right" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:id="@+id/loginBtn"
+            android:background="@drawable/logregis_btn_bg"
+            android:text="登录"
+            android:textColor="@drawable/botton_font_style"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:id="@+id/textView_tips"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal|bottom">
+        <ImageView
+            android:layout_marginBottom="14dp"
+            android:src="@drawable/add"
+            android:id="@+id/imageRegister"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+
+            android:layout_gravity="center_horizontal|bottom" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="#0B6ED4"
+            android:id="@+id/relativeLayout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="小兴兴"
+                android:textColor="#ffffff"
+                android:textSize="17sp"
+                android:id="@+id/publish_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="18dp"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥  5"
+                android:textColor="#ffffff"
+                android:textSize="30sp"
+                android:id="@+id/publish_right"
+                android:layout_marginRight="30dp"
+                android:layout_marginEnd="36dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/publish_logo"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_launcher"
+            android:layout_below="@+id/relativeLayout"
+            android:layout_marginTop="-40dp"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>

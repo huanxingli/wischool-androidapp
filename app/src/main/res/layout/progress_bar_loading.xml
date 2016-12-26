@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/progress_hud_bg"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="40dp"
+    android:paddingRight="40dp"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp">
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:src="@drawable/common_loading_circle"
+        android:id="@+id/spinnerImageView"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_message"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/black"/>
+</LinearLayout>

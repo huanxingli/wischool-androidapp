@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:customer="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#ffcd34"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <cn.wischool.ws1app.wischool_androidapp.widget.LogoView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/id_logo"
+                customer:centerText="帮忙上下课"
+                customer:logoSrc="@drawable/i1"
+                customer:centerTextSize="5sp"
+                customer:rightText="￥ 5"
+                customer:rightTextSize="9sp"
+                customer:textColor="@color/white"
+                />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5">
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5.5"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="昵称：哈哈宝贝"
+                        android:textSize="18sp"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="2dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:text="信誉度："
+                            android:textSize="18sp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="❤❤❤❤"
+                            android:textColor="@color/red"
+                            android:textSize="18sp"/>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:textColor="@color/black"
+                        android:text="时间：2016.01.04-2016.01.04"
+                        android:textSize="18sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:textColor="@color/black"
+                        android:text="区域：广东工业大学龙洞校区"
+                        android:textSize="18sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:textColor="@color/black"
+                        android:text="任务分类：单人任务"
+                        android:textSize="18sp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@color/activity_background">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="任务要求"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/textView4" />
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/detail_btn_accept"
+                    android:text="接受"
+                    android:textColor="@color/black"
+                    android:background="@drawable/tasksure_btn_bg"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginRight="7dp"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="140dp">-->
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="90dp"-->
+    <!--android:background="#0B6ED4"-->
+    <!--android:id="@+id/relativeLayout">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="帮忙上下课"-->
+    <!--android:textColor="#ffffff"-->
+    <!--android:textSize="17sp"-->
+    <!--android:id="@+id/textView3"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:layout_marginTop="18dp"-->
+    <!--android:layout_centerHorizontal="true" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="￥  5"-->
+    <!--android:textColor="#ffffff"-->
+    <!--android:textSize="30sp"-->
+    <!--android:id="@+id/textView2"-->
+    <!--android:layout_marginRight="30dp"-->
+    <!--android:layout_marginEnd="36dp"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_alignParentEnd="true" />-->
+
+    <!--</RelativeLayout>-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="70dp"-->
+    <!--android:layout_height="70dp"-->
+    <!--android:id="@+id/imageView"-->
+    <!--android:scaleType="fitXY"-->
+    <!--android:src="@drawable/ic_launcher"-->
+    <!--android:layout_below="@+id/relativeLayout"-->
+    <!--android:layout_marginTop="-40dp"-->
+    <!--android:layout_centerHorizontal="true" />-->
+
+    <!--</RelativeLayout>-->
+

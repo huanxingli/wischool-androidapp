@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:customer="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <include layout="@layout/publish_bar"/>
+
+    <cn.wischool.ws1app.wischool_androidapp.widget.LogoView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_logo"
+        customer:centerText="焕兴"
+        customer:logoSrc="@drawable/i1"
+        customer:centerTextSize="6sp"
+        customer:textColor="@color/white"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+            <EditText
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:minLines="1"
+                android:maxLines="8"
+                android:gravity="top"
+                android:background="@null"
+                android:layout_height="130dp"
+                android:textSize="14sp"
+                android:inputType="textMultiLine"
+                android:hint="请输入任务内容"/>
+            <cn.wischool.ws1app.wischool_androidapp.widget.PublishItem1
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/view_title"
+                customer:src="@drawable/publish_title"
+                customer:text="任务标题"/>
+
+            <cn.wischool.ws1app.wischool_androidapp.widget.PublishItem1
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:id="@+id/view_time"
+                customer:src="@drawable/publish_time"
+                customer:text="任务时间"/>
+
+            <cn.wischool.ws1app.wischool_androidapp.widget.PublishItem1
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/view_location"
+                customer:src="@drawable/publish_location"
+                customer:text="任务范围"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/publish_buttom"/>
+
+</LinearLayout>
