@@ -51,7 +51,6 @@ public class HomeFragment extends Fragment {
 
     private BannerManager mBanner;
 
-    public static ImageView[] strips;//strips[]是从1到4
 
 
     @Nullable
@@ -154,10 +153,5 @@ public class HomeFragment extends Fragment {
         imageEmergency.setImageBitmap(ImageUtil.getBitmap(getActivity(),R.drawable.home_clock));
 
     }
-
-
-
-
-
 
 }
