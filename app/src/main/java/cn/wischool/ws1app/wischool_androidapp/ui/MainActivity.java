@@ -13,7 +13,6 @@ import android.widget.RadioGroup;
 import cn.wischool.ws1app.wischool_androidapp.AppManager;
 import cn.wischool.ws1app.wischool_androidapp.R;
 import cn.wischool.ws1app.wischool_androidapp.common.UiHelper;
-import cn.wischool.ws1app.wischool_androidapp.ui.tab_fragment.AddFragment;
 import cn.wischool.ws1app.wischool_androidapp.ui.tab_fragment.CarFragment;
 import cn.wischool.ws1app.wischool_androidapp.ui.tab_fragment.HomeFragment;
 import cn.wischool.ws1app.wischool_androidapp.ui.tab_fragment.MeFragment;
@@ -25,13 +24,11 @@ public class MainActivity extends FragmentActivity implements RadioGroup.OnCheck
     private RadioGroup group;
     private RadioButton homeRadio;
     private RadioButton shequRadio;
-    private RadioButton addRadio;
     private RadioButton carRadio;
     private RadioButton meRadio;
 
     private FragmentManager fragmentManager;
 
-    private AddFragment addFragment;
     private CarFragment carFragment;
     private HomeFragment homeFragment;
     private MeFragment meFragment;
@@ -57,7 +54,6 @@ public class MainActivity extends FragmentActivity implements RadioGroup.OnCheck
         group = (RadioGroup) findViewById(R.id.main_tabs);
         homeRadio = (RadioButton) findViewById(R.id.tab_home);
         shequRadio = (RadioButton) findViewById(R.id.tab_shequ);
-        addRadio = (RadioButton) findViewById(R.id.tab_add);
         carRadio = (RadioButton) findViewById(R.id.tab_car);
         meRadio = (RadioButton) findViewById(R.id.tab_me);
     }
@@ -70,9 +66,6 @@ public class MainActivity extends FragmentActivity implements RadioGroup.OnCheck
                 break;
             case R.id.tab_shequ:
                 changeFragment(new ShequFragment(),true);
-                break;
-            case R.id.tab_add:
-                changeFragment(new AddFragment(),true);
                 break;
             case R.id.tab_car:
                 changeFragment(new CarFragment(),true);

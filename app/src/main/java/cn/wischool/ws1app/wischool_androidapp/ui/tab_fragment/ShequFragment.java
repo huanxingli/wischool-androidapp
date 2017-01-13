@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import cn.wischool.ws1app.wischool_androidapp.R;
+import cn.wischool.ws1app.wischool_androidapp.ui.BaseFragment;
 
 /**
  * Created by xiaoxingxing on 2016/5/11.

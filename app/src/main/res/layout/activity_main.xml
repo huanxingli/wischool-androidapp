@@ -25,14 +25,10 @@
             android:text="@string/tab_community"/>
         <RadioButton
             style="@style/RadioStyle"
-            android:id="@+id/tab_add"
-            android:drawableTop="@drawable/tab_add"
-            android:text="@string/tab_add"/>
-        <RadioButton
-            style="@style/RadioStyle"
             android:id="@+id/tab_car"
             android:drawableTop="@drawable/tab_car"
             android:text="@string/tab_car"/>
+
         <RadioButton
             style="@style/RadioStyle"
             android:id="@+id/tab_me"

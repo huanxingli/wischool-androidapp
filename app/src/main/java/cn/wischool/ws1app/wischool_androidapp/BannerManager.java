@@ -39,8 +39,11 @@ public class BannerManager {
     private int scaleSize = 1024;
     private int defaultScrollerSpeed = 1200;
     private int defaultDotsCount = 1;  //默认点的数量
-    private int defaultDotWidth = 50;  //默认提示条的宽度
-    private int defaultDotHeight = 4; //默认提示条的高度
+    private int defaultDotWidth = 6;  //默认提示点的宽度
+    private int defaultDotHeight = 6; //默认提示点的高度
+    private int defaultDotMarginLeft = 5;
+    private int defaultDotMarginRight = 5;
+
     private Context context;
     private View mView;
     private ViewPager mViewPagerBanner;
@@ -165,8 +168,10 @@ public class BannerManager {
         if (size > defaultDotsCount) {
             int width = ApplicationUtil.dip2px(defaultDotWidth);
             int height = ApplicationUtil.dip2px(defaultDotHeight);
+            int marginLeft = ApplicationUtil.dip2px(defaultDotMarginLeft);
+            int marginRight = ApplicationUtil.dip2px(defaultDotMarginRight);
             LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(width, height);
-            params.setMargins(0, 0, 0, 0);
+            params.setMargins(marginLeft, 0, marginRight, 0);
             for (int i = defaultDotsCount; i < size; i++) {
                 View view = new View(mView.getContext());
                 view.setLayoutParams(params);

@@ -6,10 +6,13 @@
     <color name="singletask_yellow">#ffcd34</color>
     <color name="multitasks_red">#eb0738</color>
     <color name="register_background">#faa428</color>
-    <color name="line">#EFEFEF</color>
     <color name="red">#ff5f5f</color>
-    <color name="gray">#BFBFBF</color>
     <color name="btn_gray">#7d7d7d</color>
     <color name="btn_press">#686868</color>
     <color name="black">#000000</color>
+    <color name="homeItemYellow">#ffff00</color>
+    <color name="homeItemRed">#ff0000</color>
+    <color name="tab_blue">#0000ff</color>
+    <color name="tab_greg">#b3b3b3</color>
+    <color name="gray">#bfbfbf</color>
 </resources>

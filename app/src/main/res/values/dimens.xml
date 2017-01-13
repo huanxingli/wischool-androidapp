@@ -1,7 +1,6 @@
 <resources>
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
-    <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="bottom_tab_font_size">10.0sp</dimen>
     <dimen name="bottom_tab_padding_up">5.0dip</dimen>
     <dimen name="bottom_tab_padding_drawable">2.0dip</dimen>
@@ -9,9 +8,6 @@
     <dimen name="widget_height">100.0dip</dimen>
     <dimen name="sta_height">48.0dip</dimen>
     <dimen name="large_padding_length">20.0dip</dimen>
-    <dimen name="widget_write_margin_top">19.0dip</dimen>
-    <dimen name="widget_write_margin_left">10.0dip</dimen>
-    <dimen name="widget_content_margin_top">20.0dip</dimen>
     <dimen name="widget_content_margin_left">10.0dip</dimen>
     <dimen name="widget_logo_size">35.0dip</dimen>
     <dimen name="title_height">74.0dip</dimen>
@@ -22,4 +18,8 @@
     <dimen name="title_text_size">20.0sp</dimen>
     <dimen name="normal_padding_length">10.0dip</dimen>
     <dimen name="no_result_padding_length">50.0dip</dimen>
+    
+    <dimen name="home_task_kind_margin_left">15dp</dimen>
+    <dimen name="home_task_kind_margin_top">10dp</dimen>
+    
 </resources>

@@ -17,7 +17,7 @@ import com.squareup.picasso.Picasso;
 import cn.wischool.ws1app.wischool_androidapp.R;
 import cn.wischool.ws1app.wischool_androidapp.widget.alertDialog.MyAlertDialog;
 import cn.wischool.ws1app.wischool_androidapp.widget.alertDialog.MyAlertDialogInterface;
-import cn.wischool.ws1app.wischool_androidapp.widget.PublishItem1;
+import cn.wischool.ws1app.wischool_androidapp.widget.PublishItem;
 import roboguice.inject.ContentView;
 import roboguice.inject.InjectView;
 
@@ -37,13 +37,13 @@ public class PublishActivity extends BaseFragmentActivity implements View.OnClic
     private ImageView image;
 
     @InjectView(R.id.view_title)
-    private PublishItem1 customerTitle;
+    private PublishItem customerTitle;
 
     @InjectView(R.id.view_time)
-    private PublishItem1 customerTime;
+    private PublishItem customerTime;
 
     @InjectView(R.id.view_location)
-    private PublishItem1 customerLocation;
+    private PublishItem customerLocation;
 
     private PopupMenu popup;
 
