@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="#ffffff">
+    <TableRow>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/all_task"
+                android:textSize="16sp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/tab_blue"
+                android:layout_marginTop="@dimen/home_task_kind_margin_top"
+                android:layout_marginLeft="@dimen/home_task_kind_margin_left"
+                android:layout_marginRight="@dimen/home_task_kind_margin_left"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/single_task"
+                android:textSize="16sp"
+                android:layout_gravity="center_horizontal" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/singletask_yellow"
+                android:layout_marginTop="@dimen/home_task_kind_margin_top"
+                android:layout_marginLeft="@dimen/home_task_kind_margin_left"
+                android:layout_marginRight="@dimen/home_task_kind_margin_left"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/multiple_tasks"
+                android:textSize="16sp"
+                android:layout_gravity="center_horizontal" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/multitasks_red"
+                android:layout_marginTop="@dimen/home_task_kind_margin_top"
+                android:layout_marginLeft="@dimen/home_task_kind_margin_left"
+                android:layout_marginRight="@dimen/home_task_kind_margin_left"/>
+        </LinearLayout>
+    </TableRow>
+</TableLayout>
