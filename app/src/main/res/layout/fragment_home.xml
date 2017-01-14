@@ -105,7 +105,7 @@
             android:drawablePadding="5dp"
             android:textColorHint="#ffffff"
             android:textColor="#ffffff"
-            android:textSize="10sp"
+            android:textSize="12sp"
             android:id="@+id/search_edt"
             android:layout_marginLeft="50dp" />
 

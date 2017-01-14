@@ -78,7 +78,7 @@ public class HomeFragment extends Fragment {
 
         rlContainer = (RelativeLayout) view.findViewById(R.id.rl_container);
         Drawable drawable = getResources().getDrawable(R.drawable.home_search);
-        drawable.setBounds(0,0,18,18);//距离左边，上边，宽度和高度
+        drawable.setBounds(0,0,20,20);//距离左边，上边，宽度和高度
         editText.setCompoundDrawables(drawable,null,null,null);
 
 
