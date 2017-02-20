@@ -29,8 +29,10 @@ import java.util.List;
 import cn.wischool.ws1app.wischool_androidapp.BannerManager;
 import cn.wischool.ws1app.wischool_androidapp.R;
 import cn.wischool.ws1app.wischool_androidapp.adapter.HomeRefreshAdapter;
+import cn.wischool.ws1app.wischool_androidapp.com.zxing.android.CaptureActivity;
 import cn.wischool.ws1app.wischool_androidapp.common.SharedPreferencesHelper;
 import cn.wischool.ws1app.wischool_androidapp.common.SharedPreferencesLifecycle;
+import cn.wischool.ws1app.wischool_androidapp.common.UiHelper;
 import cn.wischool.ws1app.wischool_androidapp.infobean.Banner;
 import cn.wischool.ws1app.wischool_androidapp.infobean.HomeBean;
 import cn.wischool.ws1app.wischool_androidapp.ui.departmentSelect.ProvinceSlectActivity;
@@ -50,6 +52,7 @@ public class HomeFragment extends Fragment {
     private RelativeLayout rlContainer;
     private BannerManager mBanner;
     private LinkedList<HomeBean> mListItems;
+    private ImageView imgScanner;
     /**
      * 上拉刷新的控件
      */
@@ -70,15 +73,14 @@ public class HomeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_home,null);
         editText = (EditText) view.findViewById(R.id.search_edt);
-//        button = (Button) view.findViewById(R.id.btn);
         imagePublish = (ImageView) view.findViewById(R.id.imageView2);
-//        btnTest = (Button) view.findViewById(R.id.home_btn_test);
         mPullRefreshListView = (PullToRefreshListView) view.findViewById(R.id.pull_refresh_list);
         verticalTextView = (VerticalTextView) view.findViewById(R.id.home_text_auto);
+        imgScanner = (ImageView) view.findViewById(R.id.imgScanner);
 
         rlContainer = (RelativeLayout) view.findViewById(R.id.rl_container);
         Drawable drawable = getResources().getDrawable(R.drawable.home_search);
-        drawable.setBounds(0,0,20,20);//距离左边，上边，宽度和高度
+        drawable.setBounds(0,0,35,35);//距离左边，上边，宽度和高度
         editText.setCompoundDrawables(drawable,null,null,null);
 
 
@@ -137,13 +139,13 @@ public class HomeFragment extends Fragment {
 //            }
 //        });
 
-//        btnTest.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(v.getContext(), ProvinceSlectActivity.class);
-//                startActivity(intent);
-//            }
-//        });
+        //显示扫一扫页面
+        imgScanner.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivityForResult(new Intent(v.getContext(), CaptureActivity.class),9999);
+            }
+        });
 
         editText.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -218,6 +220,18 @@ public class HomeFragment extends Fragment {
         startLabels.setReleaseLabel("你敢放，我就敢刷新...");// 下来达到一定距离时，显示的提示
     }
 
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode==9999){
+            if(data!=null){
+                String QRCode=data.getStringExtra("QRCode");
+                if(QRCode!=null) {
+                    UiHelper.getInstance().toastMessage(getActivity(),QRCode);
+                }
+            }
+        }
+    }
 
     public void setListViewHeightBasedOnChildren(PullToRefreshListView listView) {
         // 获取ListView对应的Adapter
@@ -281,6 +295,8 @@ public class HomeFragment extends Fragment {
             // Call onRefreshComplete when the list has been refreshed.
             mPullRefreshListView.onRefreshComplete();
         }
+
+
     }
 
 }

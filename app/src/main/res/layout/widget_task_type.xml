@@ -43,7 +43,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="5dp"
-                android:background="@color/singletask_yellow"
+                android:background="@color/homeItemYellow"
                 android:layout_marginTop="@dimen/home_task_kind_margin_top"
                 android:layout_marginLeft="@dimen/home_task_kind_margin_left"
                 android:layout_marginRight="@dimen/home_task_kind_margin_left"/>
@@ -65,7 +65,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="5dp"
-                android:background="@color/multitasks_red"
+                android:background="@color/homeItemRed"
                 android:layout_marginTop="@dimen/home_task_kind_margin_top"
                 android:layout_marginLeft="@dimen/home_task_kind_margin_left"
                 android:layout_marginRight="@dimen/home_task_kind_margin_left"/>

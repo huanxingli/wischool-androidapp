@@ -1,5 +1,6 @@
 package cn.wischool.ws1app.wischool_androidapp.ui;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -51,6 +52,10 @@ public class MainActivity extends FragmentActivity implements RadioGroup.OnCheck
 
     //初始化控件
     private void initView() {
+        homeFragment = new HomeFragment();
+        shequFragment = new ShequFragment();
+        carFragment = new CarFragment();
+        meFragment = new MeFragment();
         group = (RadioGroup) findViewById(R.id.main_tabs);
         homeRadio = (RadioButton) findViewById(R.id.tab_home);
         shequRadio = (RadioButton) findViewById(R.id.tab_shequ);
@@ -62,16 +67,16 @@ public class MainActivity extends FragmentActivity implements RadioGroup.OnCheck
     public void onCheckedChanged(RadioGroup radioGroup, int i) {
         switch (i){
             case R.id.tab_home:
-                changeFragment(new HomeFragment(),true);
+                changeFragment(homeFragment,true);
                 break;
             case R.id.tab_shequ:
-                changeFragment(new ShequFragment(),true);
+                changeFragment(shequFragment,true);
                 break;
             case R.id.tab_car:
-                changeFragment(new CarFragment(),true);
+                changeFragment(carFragment,true);
                 break;
             case R.id.tab_me:
-                changeFragment(new MeFragment(),true);
+                changeFragment(meFragment,true);
                 break;
         }
     }
@@ -96,5 +101,18 @@ public class MainActivity extends FragmentActivity implements RadioGroup.OnCheck
             }
         }
         return true;
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode==9999){
+            if(data!=null){
+                String QRCode=data.getStringExtra("QRCode");
+                if(QRCode!=null) {
+                    homeFragment.onActivityResult(requestCode, resultCode, data);
+                }
+            }
+        }
     }
 }
