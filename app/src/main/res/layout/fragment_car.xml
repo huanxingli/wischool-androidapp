@@ -23,4 +23,21 @@
         android:text="再次登录"
         android:id="@+id/repeatlogin"/>
 
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:id="@+id/encodeEdit"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="生成二维码"
+        android:id="@+id/makeEncode"/>
+    <ImageView
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/encodeImg"
+        android:layout_gravity="center"/>
+
 </LinearLayout>

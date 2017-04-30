@@ -112,7 +112,7 @@
                 android:layout_alignParentEnd="true" />
 
         </RelativeLayout>
-        <cn.wischool.ws1app.wischool_androidapp.widget.RoundImageView
+        <cn.wischool.wsapp.wischoolandroidapp.widget.RoundImageView
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:id="@+id/person_info_logo"

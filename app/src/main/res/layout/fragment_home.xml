@@ -6,9 +6,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
         <LinearLayout
             xmlns:ptr="http://schemas.android.com/apk/res-auto"
             android:layout_width="match_parent"
@@ -47,14 +44,14 @@
                     android:layout_gravity="center_vertical"
                     android:background="#B3B3B3"/>
 
-                <cn.wischool.ws1app.wischool_androidapp.widget.VerticalTextView
+                <cn.wischool.wsapp.wischoolandroidapp.widget.VerticalTextView
                     android:layout_gravity="center_vertical"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:id="@+id/home_text_auto">
 
-                </cn.wischool.ws1app.wischool_androidapp.widget.VerticalTextView>
+                </cn.wischool.wsapp.wischoolandroidapp.widget.VerticalTextView>
             </LinearLayout>
 
             <com.handmark.pulltorefresh.library.PullToRefreshListView
@@ -74,7 +71,7 @@
 
 
         </LinearLayout>
-    </ScrollView>
+
 
 
     <RelativeLayout

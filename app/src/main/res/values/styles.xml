@@ -6,6 +6,10 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="CommunityActivity" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:listDivider">@drawable/divider</item>
+    </style>
+
     <style name="main_tab_bottom">
         <item name="android:textSize">@dimen/bottom_tab_font_size</item>
         <item name="android:textColor">@drawable/tabhost_font_style</item>
@@ -17,25 +21,34 @@
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginBottom">2.0dip</item>
+        <item name="android:layout_marginTop">2.0dip</item>
         <item name="android:button">@null</item>
         <item name="android:singleLine">true</item>
         <item name="android:drawablePadding">@dimen/bottom_tab_padding_drawable</item>
         <item name="android:layout_weight">1.0</item>
     </style>
 
+    <style name="StyledIndicators" parent="@android:style/Theme.Light">
+        <item name="vpiTabPageIndicatorStyle">@style/CustomTabPageIndicator</item>
+        <item name="android:listDivider">@drawable/hot_divider_bg</item>
+    </style>
 
-    <!--<style name="publish_bottom">-->
-        <!--<item name="android:textSize">17.0sp</item>-->
-        <!--<item name="android:textColor">@color/activity_background</item>-->
-        <!--<item name="android:ellipsize">marquee</item>-->
-        <!--<item name="android:layout_gravity">center</item>-->
-        <!--<item name="android:gravity">center_horizontal</item>-->
-        <!--<item name="android:layout_width">0dp</item>-->
-        <!--<item name="android:layout_marginBottom">2.0dip</item>-->
-        <!--<item name="android:button">@null</item>-->
-        <!--<item name="android:background">@null</item>-->
-        <!--<item name="android:layout_weight">1.0</item>-->
-    <!--</style>-->
+    <style name="CustomTabPageIndicator" parent="Widget.TabPageIndicator">
+        <item name="android:background">@drawable/hot_tab_indicator</item>
+        <item name="android:textAppearance">@style/CustomTabPageIndicator.Text</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:dividerPadding">8dp</item>
+        <item name="android:showDividers">middle</item>
+        <item name="android:listDivider">@drawable/hot_divider_bg</item>
+        <item name="android:fadingEdge">horizontal</item>
+        <item name="android:fadingEdgeLength">8dp</item>
+    </style>
+
+    <style name="CustomTabPageIndicator.Text" parent="android:TextAppearance.Medium">
+        <item name="android:typeface">monospace</item>
+        <item name="android:textColor">@drawable/selector_tabtext</item>
+    </style>
+
 
     <style name="task_tab_bar">
         <item name="android:textSize">18sp</item>
@@ -65,7 +78,6 @@
     </style>
 
     <style name="MyTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <item name="vpiTabPageIndicatorStyle">@style/MyWidget.TabPageIndicator</item>
         <item name="android:windowNoTitle">true</item>
         <item name="android:animationDuration">5000</item>
         <item name="android:windowContentOverlay">@null</item>

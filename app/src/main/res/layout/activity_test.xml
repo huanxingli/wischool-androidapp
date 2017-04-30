@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <cn.wischool.ws1app.wischool_androidapp.widget.LogoView
+    <cn.wischool.wsapp.wischoolandroidapp.widget.LogoView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/id_logo"
