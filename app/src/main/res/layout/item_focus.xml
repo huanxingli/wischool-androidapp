@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/head1"
+            android:id="@+id/headIV"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="小李子007"
+            android:textColor="#000000"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/nameTV"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/headIV" />
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="+关注"
+            android:textSize="18sp"
+            android:id="@+id/focusBtn"
+            android:textColor="#0000ff"
+            android:background="@drawable/hot_button_style"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#bfbfbf"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/contentTV"
+        android:textSize="15sp"
+        android:text="我们的毕业游，致终将逝去的青春\n希望以后我们友谊长存。\n有你们我的青春才更有绚丽，\n祝你们有个美好前程"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#000000"/>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp">
+
+    </android.support.v7.widget.RecyclerView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="30dp">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/likeIV"
+            android:src="@drawable/hot_like1"/>
+        <TextView
+            android:textSize="16sp"
+            android:layout_marginLeft="3dp"
+            android:id="@+id/likeTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"/>
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/commentIV"
+            android:src="@drawable/hot_content"/>
+        <TextView
+            android:textSize="16sp"
+            android:layout_marginLeft="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/commentTV"
+            android:text="评论"/>
+        <ImageView
+            android:id="@+id/shareIV"
+            android:layout_marginLeft="10dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/hot_share"/>
+        <TextView
+            android:id="@+id/shareTV"
+            android:textSize="16sp"
+            android:layout_marginLeft="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分享"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:id="@+id/timeTV"
+        android:text="1分钟前"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:id="@+id/dividerTV"
+        android:background="#bfbfbf"/>
+
+</LinearLayout>
