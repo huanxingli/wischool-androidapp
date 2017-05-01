@@ -46,6 +46,12 @@ public class GsonHelper {
         return 0;
     }
 
+    /**
+     * 解析json数据
+     * @param key
+     * @param json
+     * @return
+     */
     public static String parseString(String key,String json){
         JSONObject object;
         try {
