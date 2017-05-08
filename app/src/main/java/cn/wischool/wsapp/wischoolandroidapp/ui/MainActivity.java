@@ -19,7 +19,9 @@ import cn.wischool.wsapp.wischoolandroidapp.ui.tab_fragment.HomeFragment;
 import cn.wischool.wsapp.wischoolandroidapp.ui.tab_fragment.MeFragment;
 import cn.wischool.wsapp.wischoolandroidapp.ui.tab_fragment.CommunityFragment;
 
-
+/**
+ * Created by lihuanxing on 16/5/29.
+ */
 public class MainActivity extends FragmentActivity implements RadioGroup.OnCheckedChangeListener {
 
     private RadioGroup group;
